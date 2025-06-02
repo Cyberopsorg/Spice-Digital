@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Digital - Premium Indian Dining Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjRkY2NzAwIi8+CjxwYXRoIGQ9Ik0xNiA4QzEyIDggOCAxMiA4IDE2UzEyIDI0IDE2IDI0UzI0IDIwIDI0IDE2UzIwIDggMTYgOFoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="brand-logo">
+                <i class="fas fa-fire"></i>
+                <h2>Spice Digital</h2>
+            </div>
+            <div class="loading-spinner"></div>
+            <p>Welcome to Authentic Indian Flavors...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-fire"></i>
+                <h2>Spice Digital</h2>
+                <span class="tagline">Authentic Indian</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link" data-section="home"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li class="nav-item"><a href="#about" class="nav-link" data-section="about"><i class="fas fa-info-circle"></i> <span>About</span></a></li>
+                <li class="nav-item"><a href="#menu" class="nav-link" data-section="menu"><i class="fas fa-utensils"></i> <span>Menu</span></a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link" data-section="gallery"><i class="fas fa-images"></i> <span>Gallery</span></a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link" data-section="testimonials"><i class="fas fa-star"></i> <span>Testimonials</span></a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact"><i class="fas fa-envelope"></i> <span>Contact</span></a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="hamburger" id="hamburger"><span class="bar"></span><span class="bar"></span><span class="bar"></span></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="namaste-text">नमस्ते! Welcome to Spice Digital</h1>
+            <p class="hero-subtitle">Experience the authentic taste of India with modern digital ordering and traditional recipes passed down through generations.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-target="#menu"><span>Explore Menu</span> <i class="fas fa-pepper-hot"></i></button>
+                <button class="btn btn-secondary" data-target="#reservation"><span>Book Table</span> <i class="fas fa-calendar-alt"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Heritage</h2>
+                <p class="section-subtitle">Celebrating the Rich Tradition of Indian Cuisine</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>From Tradition to Innovation</h3>
+                    <p>Founded by <strong> Manav Patel </strong> in 2025, Spice Digital brings together the timeless traditions of Indian cooking with modern technology. Our recipes have been passed down through generations, originating from the royal kitchens of Rajasthan and the coastal spice gardens of Kerala.</p>
+                    <p>We honor the authentic flavors of India while embracing digital innovation to create a seamless dining experience that connects you with the soul of Indian cuisine.</p>
+                    <div class="features-grid">
+                        <div class="feature-card"><div class="feature-icon"><i class="fas fa-pepper-hot"></i></div><h4>Authentic Spices</h4><p>Fresh spices sourced directly from Indian farms and ground daily in our kitchen</p></div>
+                        <div class="feature-card"><div class="feature-icon"><i class="fas fa-crown"></i></div><h4>Royal Recipes</h4><p>Traditional recipes from royal kitchens, prepared by certified Indian chefs</p></div>
+                        <div class="feature-card"><div class="feature-icon"><i class="fas fa-leaf"></i></div><h4>Fresh Ingredients</h4><p>Daily fresh vegetables, premium basmati rice, and organic dairy products</p></div>
+                        <div class="feature-card"><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div><h4>Digital Ordering</h4><p>Modern ordering system with customizable spice levels and dietary preferences</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Digital Menu</h2>
+                <p class="section-subtitle">Authentic Indian Dishes with Modern Ordering</p>
+            </div>
+            <div class="menu-content">
+                <div class="menu-grid" id="menu-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Visual Journey Through Indian Cuisine</p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid"></div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section"></section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p class="section-subtitle">Book Your Indian Dining Experience</p>
+            </div>
+            <div class="reservation-content" style="align-items: flex-end; gap: 2rem;">
+                <div class="reservation-character" style="display: flex; flex-direction: column; align-items: center;">
+                    <!-- 3D-Style Chef SVG Character -->
+                    <svg width="110" height="150" viewBox="0 0 110 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="55" cy="140" rx="35" ry="10" fill="#e0e0e0"/>
+                        <circle cx="55" cy="50" r="38" fill="#fff" stroke="#b71c1c" stroke-width="4"/>
+                        <ellipse cx="55" cy="35" rx="28" ry="18" fill="#fff"/>
+                        <ellipse cx="55" cy="80" rx="24" ry="13" fill="#fff"/>
+                        <ellipse cx="55" cy="55" rx="14" ry="10" fill="#fbb13c"/>
+                        <rect x="40" y="100" width="30" height="35" rx="12" fill="#b71c1c"/>
+                        <rect x="48" y="130" width="14" height="20" rx="7" fill="#fbb13c"/>
+                        <ellipse cx="55" cy="140" rx="10" ry="4" fill="#fff"/>
+                        <!-- Face details -->
+                        <ellipse cx="48" cy="52" rx="2.5" ry="3.5" fill="#7f1010"/>
+                        <ellipse cx="62" cy="52" rx="2.5" ry="3.5" fill="#7f1010"/>
+                        <ellipse cx="55" cy="65" rx="7" ry="3" fill="#b71c1c"/>
+                    </svg>
+                </div>
+                <div class="reservation-form-container">
+                    <form class="reservation-form" id="reservation-form">
+                        <!-- Reservation form fields here -->
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <input type="date" name="date" id="date" required />
+                        <input type="time" name="time" required />
+                        <input type="number" name="guests" placeholder="Guests" min="1" max="20" required />
+                        <!-- Hidden fields for EmailJS template -->
+                        <input type="hidden" name="from_name" id="from_name" />
+                        <input type="hidden" name="reservation_type" value="Table Reservation" />
+                        <input type="hidden" name="reply_to" id="reply_to" />
+                        <button type="submit" class="btn btn-primary">Reserve</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect With Us</h2>
+                <p class="section-subtitle">We're Here to Serve You</p>
+            </div>
+            <form class="contact-form" id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <!-- Hidden fields for EmailJS template -->
+                <input type="hidden" name="from_name" id="contact_from_name" />
+                <input type="hidden" name="message_type" value="Website Contact Form" />
+                <input type="hidden" name="reply_to" id="contact_reply_to" />
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-fire"></i>
+                        <h3>Spice Digital</h3>
+                        <p class="tagline">Authentic Indian Excellence</p>
+                    </div>
+                    <p>Bringing the authentic flavors of India to your table with traditional recipes and modern convenience.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-platform="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" data-platform="instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" data-platform="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" data-platform="youtube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link" data-platform="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><strong>Email:</strong> <a href="mailto:manavpatel123@gmail.com">manavpatel123@gmail.com</a></li>
+                        <li><strong>Mobile:</strong> <a href="tel:+918866072093">+91 88660 72093</a></li>
+                        <li><strong>Address:</strong> Ahmedabad, Gujarat</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Spice Digital. All rights reserved. | Developed by <strong>Manav Patel</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="indian-menu-data.js"></script>
+    <script src="indian-gallery-data.js"></script>
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="helper-email.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Thank You!</h3>
+            <p id="modal-message"></p>
+            <button class="btn btn-primary modal-close">Done</button>
+        </div>
+    </div>
+</body>
+</html>
